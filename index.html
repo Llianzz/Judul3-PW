@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TechLink - Remote Collaboration Redefined</title>
+  <title>Nexview - Remote Collaboration Redefined</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans text-gray-800" 
   style="background: linear-gradient(120deg, #192bc2 0%, #150578 100%); scroll-behavior: smooth; overflow-x: hidden;">
 
-  <!-- Header -->
   <header id="navbar" 
     class="fixed w-full top-0 left-0 z-50 bg-white backdrop-blur shadow transition-all"
     style="box-shadow:none; transition:all 0.4s ease;">
@@ -25,7 +24,6 @@
     </nav>
   </header>
 
-  <!-- Hero -->
   <section id="home" 
     class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-24 relative overflow-hidden"
     style="opacity:0; transform:translateY(40px); transition:all 0.8s ease-out;">
@@ -45,7 +43,6 @@
     </a>
   </section>
 
-  <!-- Features -->
   <section id="features" class="py-24 px-6 max-w-8xl mx-auto text-center"
     style="background-color:white; opacity:0; transform:translateY(40px); transition:all 0.8s ease-out;">
     <h2 class="text-4xl font-bold text-[#150578] mb-12">Fitur Unggulan Kami</h2>
@@ -81,7 +78,6 @@
     </div>
   </section>
 
-  <!-- About -->
   <section id="about" class="py-24 px-6 max-w-4xl mx-auto text-center"
     style="opacity:0; transform:translateY(40px); transition:all 0.8s ease-out;">
     <h2 class="text-4xl font-bold text-white mb-8">Tentang Nexview</h2>
@@ -91,7 +87,7 @@
     </p>
   </section>
 
-  <!-- Contact -->
+
   <section id="contact" class="py-24 px-6 text-center"
   style="background-color:white; opacity:0; transform:translateY(40px); transition:all 0.8s ease-out;">
 
@@ -120,7 +116,7 @@
 </section>
 
 
-  <!-- Footer -->
+
   <footer class="py-8 text-center text-gray-600 bg-white border-t border-blue-100">
     <p>© 2025 Nexview — All Rights Reserved</p>
     <div class="flex justify-center gap-6 mt-3">
@@ -130,21 +126,20 @@
     </div>
   </footer>
 
-  <!-- JS untuk efek smooth -->
+
   <script>
-    // Navbar shadow saat scroll
     window.addEventListener("scroll", () => {
       const nav = document.getElementById("navbar");
       if (window.scrollY > 10) nav.style.boxShadow = "0 2px 15px rgba(59,130,246,0.15)";
       else nav.style.boxShadow = "none";
     });
 
-    // Responsive nav
+  
     document.getElementById("menu-btn").addEventListener("click", () => {
       document.getElementById("menu").classList.toggle("hidden");
     });
 
-    // Efek fade in scroll
+
     const sections = document.querySelectorAll("section");
     const observer = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
